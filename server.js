@@ -10,7 +10,7 @@ connectDB();
 dotenv.config();
 
 app.use(cors({
-  origin: 'http://localhost:3000', // ⛔ Do NOT use '*'
+  origin: '*', // ⛔ Do NOT use '*'
   credentials: true,               // ✅ Allow cookies/headers
 }));
 app.use(express.json());
